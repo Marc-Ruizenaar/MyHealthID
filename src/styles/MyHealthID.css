@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+}
+
+.myHealthID {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: #f6f6f6;
+
+  overflow: hidden;
+  margin: 3rem 0;
+
+  #qr img {
+    width: 243px;
+    height: 243px;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 2rem 0;
+    color: #2260ff;
+  }
+
+  #healthIDContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 800px;
+  }
+
+  #dataShare {
+    text-align: center;
+    color: #2260ff;
+  }
+  details {
+    width: 100%;
+  }
+
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    gap: 4rem;
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+    padding: 10px 10px 10px 0;
+  }
+
+  .customSummary::after {
+    content: ">";
+    font-size: 16px;
+    color: #2260ff;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  details[open] .customSummary::after {
+    transform: rotate(180deg);
+  }
+
+  .medicalDetails {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 0;
+
+    border-bottom: 1px solid #ccc;
+  }
+
+  .value {
+    color: #2261ff79;
+  }
+
+  .emergencyContacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px 50px;
+    border-radius: 16px;
+
+    p {
+      font-size: 1.2rem;
+      margin: 0;
+      color: #2260ff;
+    }
+
+    span {
+      font-size: 0.9rem;
+    }
+
+    #contactInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      justify-content: space-between;
+    }
+  }
+  @media screen and (max-width: 820px) {
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .myHealthID {
+    gap: 10px;
+    background-color: #ffffff;
+    overflow: hidden;
+    margin: 0;
+    padding: 2rem 0;
+
+    h1 {
+      margin: 1rem 0;
+    }
+
+    #healthIDContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-color: white;
+      padding: 0 0;
+    }
+  }
+  #dataShare {
+    text-align: center;
+    color: #2260ff;
+  }
+}
