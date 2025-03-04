@@ -2,7 +2,7 @@ import {StrictMode} from "react";
 import {createRoot} from "react-dom/client";
 import "./App.css";
 import {BrowserRouter, Route, Routes} from "react-router";
-import HomePage from "./pages/homepage";
+import HomePage from "./pages/HomePage/HomePage";
 import Dashboard from "./pages/Dashboard";
 import MyHealthID from "./pages/MyHealthID";
 
