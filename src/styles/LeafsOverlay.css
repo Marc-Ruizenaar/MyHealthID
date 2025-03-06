@@ -1,0 +1,50 @@
+.leafsOverlay {
+    overflow: hidden;
+    position: absolute;
+    inset: 0;
+    z-index: -9999;
+
+    .rightTopImg {
+        position: absolute;
+        right: -119px;
+        top: -100px;
+    }
+
+    .rightBottomImg {
+        position: absolute;
+        right: -119px;
+        bottom: -100px;
+        scale: 0.8;
+    }
+
+    .LeftMidImg {
+        position: absolute;
+        left: -119px;
+        top: 30%;
+        rotate: 74deg;
+    }
+
+    @media screen and (max-width: 820px) {
+        .rightTopImg {
+            width: 120px;
+            height: auto;
+            right: -11px;
+            top: 32px;
+        }
+
+        .rightBottomImg {
+            width: 180px;
+            height: auto;
+            right: -66px;
+            bottom: 38px;
+        }
+
+        .LeftMidImg {
+            width: 160px;
+            height: auto;
+            left: 0px;
+            top: 50%;
+        }
+
+    }
+}

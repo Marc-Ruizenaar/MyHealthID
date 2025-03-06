@@ -1,0 +1,25 @@
+.categories {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: center;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+
+    li {
+        a {
+            background-color: #E9E9E9;
+            color: black;
+            padding: 10px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/LeafsOverlay.css";
 
 export default function LeafsOverlay({ children }) {
   return (

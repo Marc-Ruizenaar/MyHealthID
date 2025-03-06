@@ -1,15 +1,17 @@
 import React from "react";
-import Header from "../componants/dashboard/Header";
+import DashboardHeader from "../componants/dashboard/DashboardHeader";
 import Cases from "../componants/dashboard/Cases";
 import Button from "../componants/general/Button";
 import LeafsOverlay from "../componants/general/LeafsOverlay";
+import Header from "../componants/MyHealthID/Header";
 
 export default function Dashboard() {
   return (
     <div>
+      <Header />
       <LeafsOverlay>
-        <main className="dashboard">
-          <Header name="Odai" />
+        <main>
+          <DashboardHeader name="Odai" />
 
           <Cases />
 

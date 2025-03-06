@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/Categories.css";
 
 export default function Categories() {
   const categories = [
@@ -28,7 +29,9 @@ export default function Categories() {
       {categories.map((categorie) => {
         return (
           <li key={categorie.title}>
-            <a href={categorie.link} aria-label={`Go to ${categorie.title}`}>{categorie.title}</a>
+            <a href={categorie.link} aria-label={`Go to ${categorie.title}`}>
+              {categorie.title}
+            </a>
           </li>
         );
       })}
