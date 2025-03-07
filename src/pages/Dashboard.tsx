@@ -16,7 +16,7 @@ export default function Dashboard() {
           <Cases />
 
           <div className="healthCardButton">
-            <Button text="Your Health card" link="./" buttonType="btnBlue" />
+            <Button text="Your Health card" link="./myhealthid" buttonType="btnBlue" />
           </div>
         </main>
       </LeafsOverlay>
